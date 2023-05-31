@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/css/tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body class=" ">
+    <nav>
+        <div class="hidden lg:flex lg:h-[4rem] lg:justify-between lg:px-3 lg:items-center"  id="tabbar">
+            <p class="tabbarItem text-[#001C59] text-3xl" >TravelSearch</p>
+            <span class="flex gap-5" >
+                <p class="tabbarItem" >Locaciones</p>
+                <p class="tabbarItem" >Stays</p>
+                <p class="tabbarItem" >FAQs</p>
+                <p class="tabbarItem" >About Us</p>
+            </span>
+            <span class="flex gap-5">
+                <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                <i class="fa-solid fa-user text-xl text-primary "></i>
+                <i class="fa-sharp fa-solid fa-moon text-xl"></i>
+
+            </span>
+        </div>
+    </nav>
+    
+    <main class="min-h-screen w-full flex flex-col items-center">
+        <div class=" h-96 w-full bg-sanFranciscoDesktop 
+            bg-no-repeat bg-cover bg-center flex flex-col items-center justify-around " id="home">
+            <input class=" h-10 w-1/2 outline-none border border-gray-200 rounded-2xl  placeholder:text-center m-0 p-0 shadow-md focus:px-4 transition ease-in-out
+             duration-300 focus:ring-2 focus:ring-[#cc2d4a] focus:w-3/4 lg:hidden" type="search"  placeholder="&#xF002; San Francisco" style="font-family:Arial, FontAwesome"  >
+            <button class="text-primary font-bold bg-white rounded-full min-h-max  min-w-max  px-10 py-2 shadow-md transition duration-200 ease-in-out hover:translate-y-1 hover:scale-110 hover:bg-primary hover:text-white" > Explore more </button>
+        </div>
+
+        <h2 class="z-0 text-primary font-bold px-4 mt-3  text-xl" >Los reales recommendados</h2>
+        <div class="lg:h-[30rem] lg:w-4/5 w-[90%] px-4 h-[15rem] flex items-center space-x-6  overflow-x-auto overscroll-x-contain scrollbar  z-10 overflow-visible" id="recomendados">
+            
+            <div class="tarjetas">
+                <img class="tarjetas-img " src="https://viajes.nationalgeographic.com.es/medio/2019/11/12/machu-picchu_7652946d_1254x837.jpg" alt="">
+                <span class="tarjetas-span" >
+                    <h2 class="font-bold " >Norway</h2>
+                    <p class="m-0 text-xs " >Beautiful landscape</p>
+                </span>
+            </div>
+
+            <div class="tarjetas">
+                <img class="tarjetas-img " src="https://raw.githubusercontent.com/platzi/PlatziTravel/main/public/img/bali.jpg" alt="">
+                <span class="tarjetas-span" >
+                    <h2 class="font-bold " >Norway</h2>
+                    <p class="m-0 text-xs " >Beautiful landscape</p>
+                </span>
+            </div>
+            <div class="tarjetas">
+                <img class="tarjetas-img " src="https://raw.githubusercontent.com/platzi/PlatziTravel/main/public/img/new_york.jpg" alt="">
+                <span class="tarjetas-span" >
+                    <h2 class="font-bold " >Norway</h2>
+                    <p class="m-0 text-xs " >Beautiful landscape</p>
+                </span>
+            </div>
+            <div class=" tarjetas">
+                <img class="tarjetas-img " src="https://raw.githubusercontent.com/platzi/PlatziTravel/main/public/img/norway.jpg" alt="">
+                <span class="tarjetas-span" >
+                    <h2 class="font-bold " >Norway</h2>
+                    <p class="m-0 text-xs " >Beautiful landscape</p>
+                </span>
+            </div>
+        </div>
+
+        <h2 class="z-0 text-primary font-bold px-4 my-3 text-xl" >Los mas pedidos</h2>
+        <div class="lg:h-[60rem] lg:w-4/5 w-[90%] lg:gap-2 gap-2 lg:grid lg:grid-cols-5 lg:grid-rows-5  flex flex-col  " id="destacados">
+           <div class="pedidos-container lg:h-auto lg:col-span-5 lg:row-span-2">
+                <img class=" pedidos-img " src="https://raw.githubusercontent.com/platzi/PlatziTravel/main/public/img/chicago.jpg" alt="">
+                <span class="pedidos-span">
+                    <h1>LIMA</h1>
+                    <p>4 rooms, 3 bath, kitchen y piscina privada</p>
+                </span>
+           </div>
+           <div class="pedidos-container lg:col-span-2 lg:row-span-3">
+                <img class="pedidos-img " src="https://raw.githubusercontent.com/platzi/PlatziTravel/main/public/img/LA.jpg" alt="">
+                <span class="pedidos-span">
+                    <h1>LOS ANGELES</h1>
+                    <p>4 rooms, 3 bath, kitchen y piscina privada</p>
+                </span>
+            </div>
+            <div class=" w-full  lg:col-span-3 lg:row-span-3 flex flex-col gap-2 h-[30rem] lg:h-auto" >
+                <div class="pedidos-container w-full h-[15rem] lg:h-1/2 overflow-hidden">
+                    <img class="rounded-lg  w-full object-cover h-full" src="https://media.radissonhotelsamericas.com/image/destination-pagesus/localattraction/20828-139885-f72599599_3xl.jpg?impolicy=HomeHero&gravity=North" alt="">
+                    <span class="pedidos-span">
+                        <h1>PIURA</h1>
+                        <p>4 rooms, 3 bath, kitchen y piscina privada</p>
+                    </span>
+                </div>
+                <div class="lg:h-1/2  h-[15rem] pedidos-container w-full overflow-hidden">
+                    <img class="rounded-lg w-full object-cover h-full" src="https://raw.githubusercontent.com/platzi/PlatziTravel/main/public/img/miami.jpg" alt="">
+                    <span class="pedidos-span">
+                        <h1>BALI</h1>
+                        <p>4 rooms, 3 bath, kitchen y piscina privada</p>
+                    </span>
+                </div>
+            </div>
+            
+            
+
+        </div>
+        <h2 class="z-0 text-primary font-bold px-4 my-1 text-xl mt-4" >FAQs</h2>
+        <div class="FAQ p-4 " id="faqs">
+            <div class="" >
+                <p class="title">Política de Cancelación</p>
+                <p class="subtitle">
+                    Para estancias menores a una semana es importante avisar con 3 días de
+                    anticipación, de caso contario será sancionado.
+                </p>
+            </div>
+            <div class="mt-4">
+                <p class="title">Métodos de pago</p>
+                <p class="subtitle">
+                    Aceptamos distintos métodos de pago: VISA, MasterCard, American Express,
+                    Paypal y Binance
+                </p>
+            </div>
+            <div class="mt-4">
+                <p class="title">Mascotas</p>
+                <p class="subtitle">El tema de las mascotas dependerá directamente del anfitrión.</p>
+            </div>
+            <div class="mt-4">
+                <p class="title">Información de Seguridad</p>
+                <p class="subtitle">
+                    Todas nuestras estancias cuentan con seguro en caso de accidentes
+                </p>
+            </div>
+            <div class="mt-4">
+                <p class="title">Estancias Largas</p>
+                <p class="subtitle">
+                    Contamos con estancias de hasta 3 meses, en este caso es requerido un
+                    anticipo con un monto del 50% del valor de la renta
+                </p>
+            </div>
+            
+        </div>
+    </main>
+    
+    <footer class="p-4 pb-16 lg:flex lg:flex-col items-center lg:w-full">
+        <ul class="text-lg  font-bold">Acerca de</ul>
+        <li class="footer-list list-none lg:w-1/2 flex flex-row flex-wrap justify-between" >
+           
+            <span class="basis-1/2 ">   
+                <ul class="text-sm text-gray-400">Investing</ul>
+                <ul class="text-sm text-gray-400">Platzi Travel Inc. </ul>
+            </span>
+            
+            <span class="basis-1/2 lg:grid lg:justify-end">
+                <ul class="text-sm text-gray-400">Work with us</ul>
+                <ul class="text-sm text-gray-400">Terms and conditions></ul>
+            </span>
+            
+            <ul class="">
+                <i class="fa-brands fa-twitter text-primary"></i>
+                <i class="fa-brands fa-instagram text-primary"></i>
+            </ul>
+        </li>
+    </footer>
+
+    <div id="tabBar" class="w-full h-16 bg-white flex items-center justify-evenly  bottom-0 fixed lg:hidden">
+        <a href="#home">
+            <i class="fa-solid fa-house text-xl text-gray-200"></i>
+        </a>
+        <a href="#destacados">
+            <i class="fa-solid fa-magnifying-glass text-xl text-primary"></i>
+        </a>
+        <a href="#recomendados">
+            <i class="fa-solid fa-heart text-xl text-gray-200"></i>
+        </a>
+        <button>
+            <i class="fa-solid fa-moon text-xl text-gray-200"></i>
+        </button>
+        <a href="#home">
+            <i class="fa-solid fa-user text-xl text-gray-200"></i>
+        </a>
+     </div>
+</body>
+</html>
